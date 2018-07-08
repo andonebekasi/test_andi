@@ -1,0 +1,13 @@
+sudo:
+  - required
+language:
+  - bash
+services:
+  - docker
+
+install:
+  - git clone https://github.com/andonebekasi/test_andi.git ~/Docker-Nagios
+
+script:
+  - ./build.sh
+
